@@ -1,3 +1,18 @@
+ /* Read Jostick
+  * ------------
+  *
+  * Reads two analog pins that are supposed to be
+  * connected to a jostick made of two potentiometers
+  *
+  * We send three bytes back to the comp: one header and two
+  * with data as signed bytes, this will take the form:
+  *     Jxy\r\n
+  *
+  * x and y are integers and sent in ASCII
+  *
+  * http://www.0j0.org | http://arduino.berlios.de
+  * copyleft 2005 DojoDave for DojoCorp
+  */
 #include <Servo.h>
 
 Servo myservo;
